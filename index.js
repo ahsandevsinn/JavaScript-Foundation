@@ -1,14 +1,13 @@
-let age = 20;
-age = 30;
-console.log("Age:", age);
+// what is variable ?
+// variable is named of container that stores data in memory.
 
-var name = "John";
-name = "Doe";
-var name = 20;
-console.log("Name:", name);
+// what is var ?
+// var is a keyword that can change variable value. and same variable assign multiple times. var is using as an old javascript.
 
-const city = "New York";
-// city = "Los Angeles"; // This will throw an error because 'city' is a constant
-city = "Los Angeles"; // This will throw an error because 'city' is a constant
-console.log("City:", city);
+// what is let ?
+// let is a keyword that can change variable value. and same variable value can be changed but not redeclared. let is using as a new javascript.
+
+// what is const ?
+// const is a keyword that cannot change variable value. and same variable value cannot be changed or redeclared. const is using as a new javascript.
+
 
