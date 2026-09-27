@@ -28,15 +28,21 @@
 // age = 20;
 
 // Assignment
-let age = 20; // Declaration and Initialization
-console.log(age); // Output: 20
+// let age = 20; // Declaration and Initialization
+// console.log(age); // Output: 20
 
-// Reassignment
-age = 21;
-console.log(age); // Output: 21
+// // Reassignment
+// age = 21;
+// console.log(age); // Output: 21
 
-// Variable Naming
-let userAge = 25; // Valid variable name
+// // Variable Naming
+// let userAge = 25; // Valid variable name
 // let 1userAge = 30; // Invalid variable name (cannot start with a number)
 // let user-age = 35; // Invalid variable name (cannot contain hyphens)
 // let userAge! = 40; // Invalid variable name (cannot contain special characters except $ and _)
+
+// Variable Scope
+// variable scope means where we use variable in which area and scope 
+let age = 20;
+console.log(20);
+
