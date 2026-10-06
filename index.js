@@ -46,3 +46,25 @@
 let age = 20;
 console.log(20);
 
+let name = "Ahsan";
+name = "Ahsan Khan";
+console.log(name);
+
+var country = "Pakistan";
+var country = "India";
+console.log(country);
+
+const city = "Karachi";
+console.log(city);
+
+const user = {
+    name : "Ahsan",
+    age : 20,
+    country : "Pakistan"
+
+};
+user.age = 30;
+console.log(user.age);
+
+
+
