@@ -85,3 +85,31 @@ console.log(sum); // Output: 30 and this is a produces output of expression
 
 // log
 console.log("Hello, World!"); // Console log prints/display value of variables/Expressions.
+
+// String
+// String is a data type thats stores text/charcters data.
+
+// String Declaratio 3 Ways
+// 1. Using Single Quotes
+let firstName = 'Ahsan';
+
+// 2. Using Double Quotes
+let lastName = "Khan";
+
+// 3. Using Backticks 
+let fullName = `Ahsan Khan`;
+
+
+// number also in String
+
+let number = "+9243843433"; // This is a string representation of a number, not an actual number data type.
+let actualNumber = 9243843433; // This is an actual number data type.
+
+// String Combine 
+let userName = firstName + " " + lastName;
+console.log(userName.length); // Output: Ahsan Khan
+console.log(userName.toLocaleUpperCase());
+console.log(userName.includes("Ahsan")); // Output: true
+
+
+
