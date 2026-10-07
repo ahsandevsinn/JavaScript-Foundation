@@ -45,93 +45,134 @@
 
 // Variable Scope
 // variable scope means where we use variable in which area and scope 
-let age = 20;
-console.log(20);
+// let age = 20;
+// console.log(20);
 
-let name = "Ahsan";
-name = "Ahsan Khan";
-console.log(name);
+// let name = "Ahsan";
+// name = "Ahsan Khan";
+// console.log(name);
 
-var country = "Pakistan";
-var country = "India";
-console.log(country);
+// var country = "Pakistan";
+// var country = "India";
+// console.log(country);
 
-const city = "Karachi";
-console.log(city);
+// const city = "Karachi";
+// console.log(city);
 
-const user = {
-    name : "Ahsan",
-    age : 20,
-    country : "Pakistan"
+// const user = {
+//     name : "Ahsan",
+//     age : 20,
+//     country : "Pakistan"
 
-};
-user.age = 30;
-console.log(user.age);
-
-
-// This is a single line comment
-/* This is a 
-multi-line comment */
+// };
+// user.age = 30;
+// console.log(user.age);
 
 
-// Statement 
-let x = 10; // This is a statement that declares a variable x and assigns it the value 10
-
-// Expression
-let a = 10;
-let b = 20;
-let sum = a + b; // This is an expression that calculates the sum of a and b and assigns it to the variable sum
-console.log(sum); // Output: 30 and this is a produces output of expression
-
-// log
-console.log("Hello, World!"); // Console log prints/display value of variables/Expressions.
-
-// String
-// String is a data type thats stores text/charcters data.
-
-// String Declaratio 3 Ways
-// 1. Using Single Quotes
-let firstName = 'Ahsan';
-
-// 2. Using Double Quotes
-let lastName = "Khan";
-
-// 3. Using Backticks 
-let fullName = `Ahsan Khan`;
+// // This is a single line comment
+// /* This is a 
+// multi-line comment */
 
 
-// number also in String
+// // Statement 
+// let x = 10; // This is a statement that declares a variable x and assigns it the value 10
 
-let number = "+9243843433"; // This is a string representation of a number, not an actual number data type.
-let actualNumber = 9243843433; // This is an actual number data type.
+// // Expression
+// let a = 10;
+// let b = 20;
+// let sum = a + b; // This is an expression that calculates the sum of a and b and assigns it to the variable sum
+// console.log(sum); // Output: 30 and this is a produces output of expression
 
-// String Combine 
-let userName = firstName + " " + lastName;
-console.log(userName.length); // Output: Ahsan Khan
-console.log(userName.toLocaleUpperCase());
-console.log(userName.includes("Ahsan")); // Output: true
+// // log
+// console.log("Hello, World!"); // Console log prints/display value of variables/Expressions.
+
+// // String
+// // String is a data type thats stores text/charcters data.
+
+// // String Declaratio 3 Ways
+// // 1. Using Single Quotes
+// let firstName = 'Ahsan';
+
+// // 2. Using Double Quotes
+// let lastName = "Khan";
+
+// // 3. Using Backticks 
+// let fullName = `Ahsan Khan`;
 
 
-// Numbers
-// Numbers is a data type to store numeric values.
-const newAge = 30;
-const newAge1 = 30.5;
-console.log(newAge);
-console.log(newAge1);
-console.log(newAge+newAge1);
-console.log(newAge-newAge1);
-console.log(newAge*newAge1);
-console.log(newAge%newAge1);
-console.log(newAge/newAge1);
+// // number also in String
+
+// let number = "+9243843433"; // This is a string representation of a number, not an actual number data type.
+// let actualNumber = 9243843433; // This is an actual number data type.
+
+// // String Combine 
+// let userName = firstName + " " + lastName;
+// console.log(userName.length); // Output: Ahsan Khan
+// console.log(userName.toLocaleUpperCase());
+// console.log(userName.includes("Ahsan")); // Output: true
 
 
-// Number Special Values
-console.log(Number.MAX_VALUE); // Output: 1.7976931348623157e+308
-console.log(Number.MIN_VALUE); // Output: 5e-324
-console.log(Number.POSITIVE_INFINITY); // Output: Infinity
-console.log(Number.NEGATIVE_INFINITY); // Output: -Infinity
-console.log(Number.NaN); // Output: NaN
+// // Numbers
+// // Numbers is a data type to store numeric values.
+// const newAge = 30;
+// const newAge1 = 30.5;
+// console.log(newAge);
+// console.log(newAge1);
+// console.log(newAge+newAge1);
+// console.log(newAge-newAge1);
+// console.log(newAge*newAge1);
+// console.log(newAge%newAge1);
+// console.log(newAge/newAge1);
 
-console.log(10/0);
-console.log(-10/0);
-console.log("Hello"/10); // Output: NaN
+
+// // Number Special Values
+// console.log(Number.MAX_VALUE); // Output: 1.7976931348623157e+308
+// console.log(Number.MIN_VALUE); // Output: 5e-324
+// console.log(Number.POSITIVE_INFINITY); // Output: Infinity
+// console.log(Number.NEGATIVE_INFINITY); // Output: -Infinity
+// console.log(Number.NaN); // Output: NaN
+
+// console.log(10/0);
+// console.log(-10/0);
+// console.log("Hello"/10); // Output: NaN
+
+// Boolean
+// Boolean is a data type to store 2 values one true or second value.
+const isMarried = true;
+const isLoggedIn = false;
+console.log(isMarried); // Output: true
+console.log(isLoggedIn); // Output: false
+
+// Undefined
+//  Undefined is a data type that represents the absence of a value or an uninitialized variable.
+let userAge;
+console.log(userAge); // Output: undefined
+
+// Null
+// Null is a data type that variables value is empty.
+let age = null;
+console.log(age); // Output: null
+
+// Object
+// Object is a data type to store map values key value pair.
+const user = {name:"Ahsan", age: 20, country: "Pakistan"};
+console.log( typeof user.name); // Output: Ahsan
+console.log(user.age); // Output: 20
+console.log(user.country); // Output: Pakistan
+console.log(typeof user); // Output: object
+
+const user1 = user;
+user1.name = "Ahsan Khan";
+console.log(typeof user1.name);
+
+// bigint
+//  bigint is a data type tp store large numbers and end of the number is n.
+const bigNumber = 1234567890123456789012345678901234567890n;
+console.log(typeof bigNumber); // Output: 1234567890123456789012345678901234567890n
+
+// Symbol
+// Symbol is a data type to store unique values.
+const userID = Symbol("userID");
+const userID1 = Symbol("userID");
+console.log( userID === typeof userID1); // Output: true
+console.log(typeof userID);
