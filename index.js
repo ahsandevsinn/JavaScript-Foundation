@@ -138,41 +138,42 @@
 
 // Boolean
 // Boolean is a data type to store 2 values one true or second value.
-const isMarried = true;
-const isLoggedIn = false;
-console.log(isMarried); // Output: true
-console.log(isLoggedIn); // Output: false
+// const isMarried = true;
+// const isLoggedIn = false;
+// console.log(isMarried); // Output: true
+// console.log(isLoggedIn); // Output: false
 
-// Undefined
-//  Undefined is a data type that represents the absence of a value or an uninitialized variable.
-let userAge;
-console.log(userAge); // Output: undefined
+// // Undefined
+// //  Undefined is a data type that represents the absence of a value or an uninitialized variable.
+// let userAge;
+// console.log(userAge); // Output: undefined
 
-// Null
-// Null is a data type that variables value is empty.
-let age = null;
-console.log(age); // Output: null
+// // Null
+// // Null is a data type that variables value is empty.
+// let age = null;
+// console.log(age); // Output: null
 
-// Object
-// Object is a data type to store map values key value pair.
-const user = {name:"Ahsan", age: 20, country: "Pakistan"};
-console.log( typeof user.name); // Output: Ahsan
-console.log(user.age); // Output: 20
-console.log(user.country); // Output: Pakistan
-console.log(typeof user); // Output: object
+// // Object
+// // Object is a data type to store map values key value pair.
+// const user = {name:"Ahsan", age: 20, country: "Pakistan"};
+// console.log( typeof user.name); // Output: Ahsan
+// console.log(user.age); // Output: 20
+// console.log(user.country); // Output: Pakistan
+// console.log(typeof user); // Output: object
 
-const user1 = user;
-user1.name = "Ahsan Khan";
-console.log(typeof user1.name);
+// const user1 = user;
+// user1.name = "Ahsan Khan";
+// console.log(typeof user1.name);
 
-// bigint
-//  bigint is a data type tp store large numbers and end of the number is n.
-const bigNumber = 1234567890123456789012345678901234567890n;
-console.log(typeof bigNumber); // Output: 1234567890123456789012345678901234567890n
+// // bigint
+// //  bigint is a data type tp store large numbers and end of the number is n.
+// const bigNumber = 1234567890123456789012345678901234567890n;
+// console.log(typeof bigNumber); // Output: 1234567890123456789012345678901234567890n
 
-// Symbol
-// Symbol is a data type to store unique values.
-const userID = Symbol("userID");
-const userID1 = Symbol("userID");
-console.log( userID === typeof userID1); // Output: true
-console.log(typeof userID);
+// // Symbol
+// // Symbol is a data type to store unique values.
+// const userID = Symbol("userID");
+// const userID1 = Symbol("userID");
+// console.log( userID === typeof userID1); // Output: true
+// console.log(typeof userID);
+
