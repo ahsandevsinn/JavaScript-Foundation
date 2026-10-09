@@ -29,12 +29,27 @@
 
 // Comparison Operators
 // Comparison Operators are used to compare variable values.
+// let a = 10;
+// let b = 20;
+
+// console.log(a == b); 
+// console.log(a != b);
+// console.log(a > b);
+// console.log(a < b);
+// console.log(a >= b);
+// console.log(a <= b);
+
+// Logical Operators
+// logical operators are used to combine multiple condtions and check and return the result according condition
 let a = 10;
 let b = 20;
+let c = 30;
 
-console.log(a == b); 
-console.log(a != b);
-console.log(a > b);
-console.log(a < b);
-console.log(a >= b);
-console.log(a <= b);
+console.log(a<b && b<c); // Output: true
+console.log(a>b || b<c); // Output: true
+console.log(!(a<b)); // Output: false
+
+// ternary Operator
+// ternary operator is user to provide short way if else condition.
+let age = 18;
+console.log(age>=18 ? "You are young": "You are old" );
