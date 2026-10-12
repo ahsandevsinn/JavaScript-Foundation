@@ -41,15 +41,35 @@
 
 // Logical Operators
 // logical operators are used to combine multiple condtions and check and return the result according condition
+// let a = 10;
+// let b = 20;
+// let c = 30;
+
+// console.log(a<b && b<c); // Output: true
+// console.log(a>b || b<c); // Output: true
+// console.log(!(a<b)); // Output: false
+
+// // ternary Operator
+// // ternary operator is user to provide short way if else condition.
+// let age = 18;
+// console.log(age>=18 ? "You are young": "You are old" );
+
+// Nullish Coalescing Operator
+// Nullish Coalescing Operator is used to provide a default value when the variable is null or undefined.
+let name = null;
+let defaultName = "Guest";
+console.log(name ?? defaultName); // Output: Guest
+
+// Speread Operator
+// Speread Operator is used to spread the elements of an array or object into individual elements.
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3); // Output: [1, 2, 3, 4, 5, 6]
+
+// == vs ===
+// == is used to compare the values of two variables, while === is used to compare the values and types of two variables.
 let a = 10;
-let b = 20;
-let c = 30;
-
-console.log(a<b && b<c); // Output: true
-console.log(a>b || b<c); // Output: true
-console.log(!(a<b)); // Output: false
-
-// ternary Operator
-// ternary operator is user to provide short way if else condition.
-let age = 18;
-console.log(age>=18 ? "You are young": "You are old" );
+let b = "10";
+console.log(a == b); // Output: true
+console.log(a === b); // Output: false
