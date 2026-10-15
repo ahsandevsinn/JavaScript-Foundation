@@ -37,13 +37,48 @@ console.log(add(5)); // Output: 5 (b defaults to 0)
 // Pure functions
 // Function scope 
 
+
 function hello(name) {
     console.log(`Hello, ${name}!`);
 }
-
-function sayHello(callback) {
+// Callback functions
+function greetWithCallback(callback) {
     console.log("Preparing to greet...");
     callback("Ahsan");
 }
 
-sayHello();
+greetWithCallback(hello);
+
+
+function add(a,b){
+    return a + b;
+    console.log(a + b);
+}
+// Do math is a high order function
+function doMath(callback){
+   let result = callback(5, 10);
+   console.log(result);
+}
+
+doMath(add); // Output: 15
+
+
+// Pure functions
+function sum(a,b){
+    return a+b;
+}
+
+total = sum(1,2);
+console.log(total);
+
+
+// Scope Functions
+// this is a Out Of Function Variable
+let a = 10; 
+function Print(){
+    console.log(a);
+    
+
+}
+
+Print();
