@@ -86,3 +86,52 @@ console.log("" ?? "Default"); // ""
 // || har falsy value par default deta hai, jab ke ?? sirf null/undefined par.
 console.log(0 || 10); // 10
 console.log(0 ?? 10); // 0
+
+// 22 October — Error Handling
+// Errors ko handle karne ke liye try/catch use karein, taake app blindly crash na ho.
+
+// 1. try/catch — Risky code try mein, aur recovery ya message catch mein.
+try {
+  const result = JSON.parse('{"name":"Amina"}');
+  console.log(result.name); // "Amina"
+} catch (error) {
+  console.log("JSON read nahi ho saka.");
+}
+
+// 2. throw new Error() — Invalid situation mein apna error raise karein.
+function withdraw(balance, amount) {
+  if (amount <= 0) {
+    throw new Error("Amount zero se zyada hona chahiye.");
+  }
+  if (amount > balance) {
+    throw new Error("Insufficient balance.");
+  }
+  return balance - amount;
+}
+
+try {
+  console.log(withdraw(500, 200)); // 300
+  console.log(withdraw(500, 700)); // Ye call error throw karegi
+} catch (error) {
+  // Error object ka message batata hai ke kya masla hua.
+  console.log("Withdrawal failed:", error.message); // "Insufficient balance."
+}
+
+// 3. Error messages — Specific message se issue samajhna aur handle karna aasaan hota hai.
+try {
+  JSON.parse("not valid JSON");
+} catch (error) {
+  console.log(error.message); // Parser ka message
+}
+
+// 4. finally — Success ho ya error, cleanup code aakhir mein chalta hai.
+try {
+  console.log("Resource use ho raha hai.");
+  throw new Error("Kaam ke dauran masla aaya.");
+} catch (error) {
+  console.log("Error:", error.message);
+} finally {
+  console.log("Cleanup hamesha chalega.");
+}
+
+// finally optional hai; iska use cleanup ke liye karein, error ko chupane ke liye nahi.
