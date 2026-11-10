@@ -18,6 +18,9 @@
 // console.log(age);
 
 
+
+
+
 // what is const ?
 // const is a keyword that cannot change variable value. and same variable value cannot be changed or redeclared. const is using as a new javascript.
 // const country = "Pakistan";
